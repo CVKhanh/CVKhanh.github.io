@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+
+
+
+body
+{
+    font-family: 'Merienda One', cursive;
+}
+
+
+.menu-wrapper
+{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.nav-area
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    transition: top .6s;
+    background: rgba(220,20,60,0.6);
+    overflow: hidden;
+}
+.logo
+{
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10%;
+}
+.logo a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 45px;
+    font-family: 'Merienda One', cursive;
+}
+.menu-wrapper nav
+{
+    float: right;
+}
+.right-nav
+{
+    overflow: hidden;
+    list-style: none;
+}
+.right-nav li
+{
+    float: left;
+    margin-left: 40px;
+    margin-top: 0px;
+}
+.right-nav li a
+{
+    position: relative;
+    display: block; 
+    transition: .5s;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 20px;
+}
+.right-nav li a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    overflow: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+.right-nav li a:hover::before
+{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.right-nav li a::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    overflow: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+.right-nav li a:hover::after
+{
+    transform: scaleX(1);
+    transform-origin: right;
+}
+.banner-area
+{
+    height: 100vh;
+    background-image: url(./images/background3.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+.main-text
+{
+    max-width: 1000px;
+    margin: 100px auto 0;
+}
+
+
+
+
+
+.typing-text p{
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-bottom: -2px;
+    color: rgb(0, 0, 0);
+    font-family: 'ABeeZee', sans-serif;
+}
+.typing-text h1{
+    font-size: 60px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10%;
+    margin-top: 10px;
+    font-family: 'ABeeZee', sans-serif;
+}
+.typing-text .blinking
+{
+    margin-left: 10%;
+    display: inline-block;
+}
+.typing-text .blinking p
+{
+    font-size: 30px;
+    font-family: 'ABeeZee', sans-serif;
+    margin-left: 5px;
+    padding: 0;
+    margin: 0;
+    color: crimson;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid crimson;
+    animation: typing 7s steps(27) forwards,
+               blink-caret .7s step-end infinite;
+    animation-iteration-count: infinite;
+}
+@keyframes blink-caret
+{
+    from,to {border-color:transparent;}
+    50% {border-color:crimson;}
+}
+@keyframes typing
+{
+    0%{width: 0%;}
+    10%{width: 0%;}
+    30%{width:100%;}
+    80%{width:100%;}
+    90%{width: 0%;}
+    100%{width: 0%;}
+}
+
+
+
+.body1-text
+{
+    text-align: center;
+    margin-top: 25px;
+}
+.body1-text h5
+{
+    color: crimson;
+}
+.body1-text1
+{
+    margin-top: 30px;
+}
+.body1-text1 p::first-letter
+{
+    font-size: 300%;
+    color: crimson;
+}
+
+/* 
+.body1-text1
+{
+    margin-left: 10%;
+    display: inline-block;
+} */
+.body1-text1 h3
+{
+    font-size: 30px;
+    font-family: 'ABeeZee', sans-serif;
+    margin-left: 5px;
+    padding: 0;
+    margin: 0;
+    color: crimson;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid crimson;
+    animation: typing1 10s steps(27) forwards,
+               blink-caret1 .7s step-end infinite;
+    animation-iteration-count: infinite;
+}
+@keyframes blink-caret1
+{
+    from,to {border-color:transparent;}
+    50% {border-color:crimson;}
+}
+@keyframes typing1
+{
+    0%{width: 0%;}
+    10%{width: 0%;}
+    30%{width:100%;}
+    80%{width:100%;}
+    90%{width: 0%;}
+    100%{width: 0%;}
+}
+
+
+
+.background-color
+{
+    background: linear-gradient(37deg,crimson 50%,#000 50%);
+    margin-top: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.square {
+    height: 350px;
+    widtH: 250px;
+    position: relative;
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(./images/tour01.jpg);
+    border-radius: 10px;
+    
+  }
+  .square:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    bottom: 0;
+    transition: height 0.5s ease-out;
+    background: linear-gradient(to bottom, transparent 0%, crimson 150%);
+    border-radius: 10px;
+  }
+  .square:hover:before {
+    height: 100%;
+  }
+  .square h3
+  {
+      color: rgb(243, 219, 230);
+  }
+  .square p
+  {
+      color: rgb(255, 0, 51);
+  }
+  .square .icon1
+  {
+      position: absolute;
+      width: 30px;
+      top: 10px;
+      left: 10px;
+  }
+  .square .icon1 path
+  {
+      fill: transparent;
+      stroke-width: 40px;
+      stroke: #fff;
+  }
+  .square .icon1 path:hover
+  {
+      fill: transparent;
+      stroke-width: 40px;
+      stroke: red;
+  }
+  
+
+  .square1 .icon2
+  {
+      position: absolute;
+      width: 30px;
+      top: 10px;
+      left: 10px;
+  }
+  .square1 .icon2 path
+  {
+      fill: transparent;
+      stroke-width: 40px;
+      stroke: #fff;
+  }
+  .square1 .icon2 path:hover
+  {
+      fill: transparent;
+      stroke-width: 40px;
+      stroke: red;
+  }
+
+
+  .square2 .icon3
+  {
+      position: absolute;
+      width: 30px;
+      top: 10px;
+      left: 10px;
+  }
+  .square2 .icon3 path
+  {
+      fill: transparent;
+      stroke-width: 40px;
+      stroke: #fff;
+  }
+  .square2 .icon3 path:hover
+  {
+      fill: transparent;
+      stroke-width: 40px;
+      stroke: red;
+  }
+
+  .square3 .icon4
+  {
+      position: absolute;
+      width: 30px;
+      top: 10px;
+      left: 10px;
+  }
+  .square3 .icon4 path
+  {
+      fill: transparent;
+      stroke-width: 40px;
+      stroke: #fff;
+  }
+  .square3 .icon4 path:hover
+  {
+      fill: transparent;
+      stroke-width: 40px;
+      stroke: red;
+  }
+
+
+
+  .square1 h3
+  {
+      color: rgb(243, 219, 230);
+  }
+  .square1 p
+  {
+      color: rgb(255, 0, 51);
+  }
+
+  .square2 h3
+  {
+      color: rgb(243, 219, 230);
+  }
+  .square2 p
+  {
+      color: rgb(255, 0, 51);
+  }
+
+  .square3 h3
+  {
+      color: rgb(243, 219, 230);
+  }
+  .square3 p
+  {
+      color: rgb(255, 0, 51);
+  }
+  .square .text-square
+  {
+      position: absolute;
+      bottom: 10px;
+      font-family: 'ABeeZee', sans-serif;
+  }
+  .square1 .text1-square
+  {
+      position: absolute;
+      bottom: 10px;
+      font-family: 'ABeeZee', sans-serif;
+  }
+  .square2 .text2-square
+  {
+      position: absolute;
+      bottom: 10px;
+      font-family: 'ABeeZee', sans-serif;
+  }
+  .square3 .text3-square
+  {
+      position: absolute;
+      bottom: 10px;
+      font-family: 'ABeeZee', sans-serif;
+  }
+
+
+  .square1 {
+    height: 350px;
+    widtH: 250px;
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(./images/tour02.png);
+    border-radius: 10px;
+  }
+  .square1:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    bottom: 0;
+    transition: height 0.5s ease-out;
+    background: linear-gradient(to bottom, transparent 0%, crimson 150%);
+    border-radius: 10px;
+  }
+  .square1:hover:before {
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .square2 {
+    height: 350px;
+    widtH: 250px;
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(./images/tour04.jpg);
+    border-radius: 10px;
+  }
+  .square2:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    bottom: 0;
+    transition: height 0.5s ease-out;
+    background: linear-gradient(to bottom, transparent 0%, crimson 150%);
+    border-radius: 10px;
+  }
+  .square2:hover:before {
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .square3 {
+    height: 350px;
+    widtH: 250px;
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(./images/tour05.jpg);
+    border-radius: 10px;
+  }
+  .square3:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    bottom: 0;
+    transition: height 0.5s ease-out;
+    background: linear-gradient(to bottom, transparent 0%, crimson 150%);
+    border-radius: 10px;
+  }
+  .square3:hover:before {
+    height: 100%;
+    border-radius: 10px;
+  }
+
+
+
+.body2-text
+{
+    text-align: center;
+    margin-top: 25px;
+    color: #fff;
+}
+.body2-text h5
+{
+    color: crimson;
+}
+
+.grid
+{
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh
+                   "1fr 1fr 1fr 1fr 1fr" 33.33vh
+                   "1fr 1fr 1fr 1fr 1fr" 33.33vh;
+    grid-gap: 5px;
+}
+
+.grid .box
+{
+    position: relative;
+
+}
+.grid .box img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.grid .box.g,
+.grid .box.f,
+.grid .box.b,
+.grid .box.a
+{
+    grid-column: span 2;
+}
+.grid .box.d
+{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.image-img
+{
+    display: block;
+    width: 100%;
+}
+.image-overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    border-radius: 10px;
+}
+.image-overlay > *
+{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+.image-overlay:hover
+{
+    opacity: 1;
+    border-radius: 10px;
+}
+.image-overlay:hover > *
+{
+    transform: translateY(0px);
+}
+.image-title
+{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+.services, .teams{
+    color:#fff;
+    background: #111;
+}
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease; 
+}   
+.teams .carousel .card:hover{
+    background: crimson;
+}
+.teams .carousel .card:hover img{
+    border-color: #fff;
+}
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
+
+
+
+
+.image-footer
+{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background: no-repeat center center scroll;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./images/footer.jpg);
+}
+.background-color2
+{
+    background-color: #1e282d;
+}
+input {
+    opacity: 0.9;
+}
+.form-footer
+{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    color: #fff;
+}
+
+#hover-icon-footer
+{
+    color: #fff;
+}
+#hover-icon-footer:hover
+{
+    color: crimson;
+}
+.hover-buttom:hover
+{
+    background-color: crimson;
+    color: #fff;
+}
